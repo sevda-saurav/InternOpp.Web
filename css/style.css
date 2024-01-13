@@ -150,16 +150,36 @@ form input{
     border-radius: 0;
 }
 
-form .fa-search{
+form .fa-search,
+form .fa-location{
     align-self: center;
     padding: 10px 20px;
     color: black;
 
 }
-form .fa-location{
-    align-self: center;
-    padding: 10px 20px;
-    color: black;
+/* MAKEING FORM RESPONSIVE */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    form {
+        width: 100%; 
+    }
+
+    form input {
+        width: 100%; 
+    }
+
+    form .fa-search,
+    form .fa-location {
+        padding: 10px; 
+    }
+
+    container form button {
+        padding: 10px;
+    }
 }
 /* MSG */
 .msg {
