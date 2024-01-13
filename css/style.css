@@ -382,9 +382,9 @@ form .fa-location{
 }
 
 .categories {
+    padding: 0 5%;
     display: grid;
-    height: 150px;
-    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 20px;
     justify-content:center;
 }
@@ -397,6 +397,11 @@ form .fa-location{
     text-align: center;
     padding: 5% 10%;
     cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-item:hover {
+    background-color: #f1c953dd;
 }
 
 
